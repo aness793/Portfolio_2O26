@@ -1,0 +1,50 @@
+.about-container h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--accent-dim);
+    padding: 0 0 2rem 0;
+    font-size: 3rem;
+    color: var(--border);
+    margin-top: 5rem;
+}
+
+h1 hr {
+    border: 2px solid var(--border);
+    width: 35svw;
+    border-radius: .6rem;
+}
+.cards-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+.about-card {
+    width: 30svw;
+    height: 70svh;
+    /* border: 1px solid white; */
+    box-shadow: 0.5px 0.5px 3px 1px var(--border) inset;
+    margin-inline: 3rem;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    border-radius: .5rem;
+}
+.about-container h4 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: var(--fourth-font);
+    font-weight: 700;
+}
+.about-container p {
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: var(--sec-font);
+}

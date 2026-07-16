@@ -1,0 +1,192 @@
+.landing {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+}
+.landing h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 gray;
+    font-family: var(--sec-font);
+}
+.landing-info {
+    font-size: 1.2rem;
+    width: 60ch;
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--sec-font);
+    color: var(--text-secondary);
+}
+.landing-buttons {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    width: 80svw;
+    justify-content: center;
+
+
+
+}
+.landing-buttons button , .landing-buttons a {
+    font-size: 1rem;
+    background-color: transparent;
+    font-weight: 600;
+    border:1.5px solid var(--border);
+    padding: .7rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor:pointer;
+    transition: color .3s ease , transform .3s ease;
+    border-radius: .5rem;
+    z-index: 99;
+    font-family: var(--fourth-font);
+}
+.landing-buttons button {
+    border: none;
+    
+}
+.remove-btn-cv {
+    display:none;
+}
+.landing-buttons button:hover,
+.landing-buttons a:hover {
+    background-color: var(--border);
+    transform: scale(1.1);
+    color: var(--background);
+}
+.landing-buttons button:hover {
+    background-color: var(--background);
+    color: var(--border) ;
+}
+
+.landing-buttons a svg , .landing-buttons button svg{
+    aspect-ratio: 1;
+    width: 1.2rem;
+}
+.landing-stats {
+    display: flex;
+    align-items: center;
+    min-height: fit-content;
+    padding: 1rem;
+}
+.landing-stats  div {
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        
+}
+.landing-stats div span {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: .5rem;
+    padding-bottom: 0;
+    /* border-bottom: 1px solid black; */
+    width: 11rem;
+    text-align: center;
+    text-shadow: 1px 1.5px 1px var(--text-secondary);
+    font-style: italic;
+    border-bottom: 1px solid var(--text-primary);
+    padding-bottom: .5rem;
+}
+.landing-stats div p {
+    font-style: italic;
+    font-size: 1rem;
+}
+/* .landing-stats div{
+    border-right: 1.5px solid var(--border);
+    box-shadow:  1px 1px 4px  var(--border);
+} */
+.download-cvs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100svw;
+    height: 105svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .9);
+    
+}
+.cvs {
+    height: 80svh;
+    width: 30svw;
+    background-color: var(--background);
+    opacity: 1;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-rows: 10% 1fr ;
+    border-radius: .5rem;
+    z-index: 100;
+    box-shadow:  1.5px 1.5px 6px  black;
+    position: sticky;
+    top: 5rem;
+}
+.leave-cvs {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.leave-cvs svg {
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 111;
+    fill: black;
+    width: 2rem;
+    aspect-ratio: 1;
+}
+.cvs-content {
+    display: flex;
+    flex-direction: column;
+    padding-block: 3rem;
+}
+.cvs-content span {
+    /* border-bottom: 1px solid black; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 1fr 30%;
+    height: 4rem;
+    align-items: center;
+    box-shadow: 1px 1px 2px var(--border);
+}
+.cvs-content span div {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.cvs-content span img {
+    width: 100%;
+    height: auto;
+    padding:0;
+
+}
+.cvs-content span p {
+    /* border-bottom: 1px solid var(--border); */
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+.cvs-content span a {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cvs-content span a svg{
+    aspect-ratio: 1;
+    width: 1.5rem;
+}

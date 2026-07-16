@@ -1,0 +1,38 @@
+:root {
+--background: #092327;
+--text-primary:whitesmoke;
+--border:#0B5351;
+--accent-dim:#66635B  ;
+/* --accent-dim:#1D4ED8  ; */
+/* --text-primary:#e3e3e3; */
+/* --background: #09090B; */
+/* --border:#1E2A3A; */
+--accent:#3B82F6  ;
+--text-secondary:##9F9FA9;
+--text-muted:#4B5563;
+--success:#10B981  ;
+
+/* Fonts */
+--main-font : Inter;
+--sec-font:"Geist";
+--fourth-font:"JetBrains Mono", monospace;
+--third-font: "Hero New", serif;
+
+}
+:root {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--main-font);
+}
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  outline-offset: 0;
+  text-decoration: none;
+  color: inherit;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
