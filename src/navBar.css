@@ -41,3 +41,9 @@
 
 
 }
+@media all and (max-width:1065px) {
+    
+    .navbar {
+        display: none;
+    }
+}

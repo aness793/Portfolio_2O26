@@ -10,7 +10,9 @@ export default function Projects() {
             <img src="platform.png" alt="" />
           </div>
           <div className="featured-project-info">
-            <h4>Accisense, traffic accident detection and severity estimation using Deep Learning models</h4>
+            <h4>Accisense
+              {/* , traffic accident detection and severity estimation using Deep Learning models*/}
+              </h4> 
             <p>AccSiense is an innovative accident detection system designed to enhance road safety and provide timely assistance in emergencies. Our platform utilizes advanced sensors and machine learning algorithms to detect accidents in real-time, allowing for rapid response and potentially saving lives.</p>
             <span className="featured-project-links">
               <a href="https://accsense-frontend.vercel.app/" target="_blank">Platform
