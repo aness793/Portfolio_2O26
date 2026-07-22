@@ -120,7 +120,7 @@
 }
 .cvs {
     height: 80svh;
-    width: 30svw;
+    width: 60%;
     background-color: var(--background);
     opacity: 1;
     margin-bottom: 3rem;
@@ -140,11 +140,11 @@
 }
 
 .leave-cvs svg {
-    font-size: 2rem;
     font-weight: 700;
     cursor: pointer;
     z-index: 111;
-    fill: black;
+    fill: var(--text-primary);
+    padding-top: .5rem;
     width: 2rem;
     aspect-ratio: 1;
 }
@@ -157,7 +157,7 @@
     /* border-bottom: 1px solid black; */
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 1fr 30%;
+    grid-template-columns: 1fr 30%;
     height: 4rem;
     align-items: center;
     box-shadow: 1px 1px 2px var(--border);
@@ -188,7 +188,7 @@
 }
 .cvs-content span a svg{
     aspect-ratio: 1;
-    width: 1.5rem;
+    width: clamp(1em, 4vw + .6em, 2em);
 }
 @media screen and (max-width:1020px) {
     
