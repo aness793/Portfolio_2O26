@@ -29,13 +29,13 @@ export default function Projects() {
         </div>
                     <h1> <hr /> Other Projects <hr /> </h1>
         <div className="other-projects-container">
-          <a href="https://github.com/aness793/Blue-ID"target="_blank">
+          <a href="https://shop-mqx8g71zf-aness793s-projects.vercel.app/"target="_blank">
             <div className="project">
             <div className="project-image">
-              <img src="blue.png" alt="" />
+              <img src="ecom.png" alt="" />
           </div>
             <div className="project-left">
-              <h4 className="other-project-title">Blue ID
+              <h4 className="other-project-title">Aness Shop
             </h4>
             
             
