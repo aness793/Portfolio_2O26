@@ -29,7 +29,7 @@ export default function Projects() {
         </div>
                     <h1> <hr /> Other Projects <hr /> </h1>
         <div className="other-projects-container">
-          <a href="https://shop-mqx8g71zf-aness793s-projects.vercel.app/"target="_blank">
+          <a href="https://shop-pi-ten-72.vercel.app/"target="_blank">
             <div className="project">
             <div className="project-image">
               <img src="ecom.png" alt="" />
