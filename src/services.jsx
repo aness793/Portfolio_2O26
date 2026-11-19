@@ -1,59 +1,33 @@
 import "./services.css"
+import { useLang } from "./LanguageContext"
 
 export default function Services() {
+  const { t } = useLang()
+
+  const services = [
+    { title: t.services.frontend, tags: ["Angular", "React", "Next js"] },
+    { title: t.services.backend, tags: ["Express", "FastAPI", "Hapi"] },
+    { title: t.services.fullstack, tags: ["PERN", "MERN", "MEAN"] },
+    { title: t.services.ml, tags: t.services.mlTags },
+  ]
+
   return (
-    <div id="services" className="services-container" >
-          <h1> <hr /> Services <hr /> </h1>
-          <div className="service-container">
-          <div className="service">
+    <div id="services" className="services-container">
+      <h1> <hr /> {t.services.title} <hr /> </h1>
+      <div className="service-container">
+        {services.map((s) => (
+          <div className="service" key={s.title}>
             <div className="service-left">
-              <h4 className="service-title"> Frontend Developement</h4>
-              
+              <h4 className="service-title">{s.title}</h4>
             </div>
             <div className="service-right">
-            <span>Angular</span>
-            <span>React</span>
-            <span>Next js</span>
+              {s.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
             </div>
           </div>
-          <div className="service">
-            <div className="service-left">
-                            <h4 className="service-title">Backend Developement</h4>
-
-         
-            </div>
-            <div className="service-right">
-                <span>Express</span>
-                <span>FastAPI</span>
-                <span>Hapi</span>
-            </div>
-              </div>
-          <div className="service">
-            <div className="service-left">
-                            <h4 className="service-title">Fullstack Developement</h4>
-
-         
-            </div>
-            <div className="service-right">
-                <span>PERN</span>
-                <span>MERN</span>
-                <span>MEAN</span>
-            </div>
-              </div>
-          <div className="service">
-            <div className="service-left">
-                            <h4 className="service-title">ML Training</h4>
-
-         
-            </div>
-            <div className="service-right">
-                <span>PyTorch</span>
-                <span>Computer-Vision</span>
-                <span>Model-Benchmarking</span>
-
-            </div>
-              </div>
-          </div>
+        ))}
       </div>
+    </div>
   )
 }
