@@ -3,8 +3,8 @@ import { initReactI18next } from 'react-i18next'
 
 // The English text IS the key: t('Download CV') shows "Download CV" in English,
 // and the matching entry in `fr` below in French. So there is no `en` block to maintain.
-// If you edit an English sentence in a component, edit its key here too,
-// otherwise French silently falls back to English for that sentence.
+// Keys must match the strings in the components EXACTLY (spaces, apostrophes, punctuation).
+// Anything not listed here (proper nouns, tech names) simply shows as written in both languages.
 
 const fr = {
   // nav
@@ -16,6 +16,8 @@ const fr = {
 
   // landing
   'Full-Stack Developer | Telecommunication & Networking': 'Développeur Full-Stack | Télécommunications & Réseaux',
+  'Full-Stack Developer': 'Développeur Full-Stack',
+'Telecommunication & Networking': 'Télécommunications & Réseaux',
   'Real projects below. Fewer bugs than my first commit.': 'De vrais projets ci-dessous. Moins de bugs que mon premier commit.',
   Projects: 'Projets',
   'Download CV': 'Télécharger le CV',
@@ -23,37 +25,58 @@ const fr = {
   // projects
   'Featured Project': 'Projet à la une',
   'Other Projects': 'Autres projets',
-  'AcciSense is an innovative accident detection system designed to enhance road safety and provide timely assistance in emergencies. Our platform utilizes advanced sensors and machine learning algorithms to detect accidents in real-time, allowing for rapid response and potentially saving lives.':
-    "AcciSense est un système innovant de détection d'accidents conçu pour améliorer la sécurité routière et faciliter l'assistance en cas d'urgence. Notre plateforme s'appuie sur des capteurs avancés et des algorithmes d'apprentissage automatique pour détecter les accidents en temps réel, permettant une intervention rapide et pouvant sauver des vies.",
+  'A platform that detects road accidents in video and estimates how severe they are. Three video models (R3D-18, SlowFast, Video Swin) classify each clip as no accident, minor, moderate or major.':
+    "Une plateforme qui détecte les accidents de la route dans des vidéos et estime leur gravité. Trois modèles vidéo (R3D-18, SlowFast, Video Swin) classent chaque clip comme pas d'accident, mineur, modéré ou majeur.",
   Platform: 'Plateforme',
   Github: 'Github',
   Article: 'Article',
+  'Online shop with cash on delivery across all 69 wilayas.':
+    'Boutique en ligne avec paiement à la livraison dans les 69 wilayas.',
+  'Fish catch log with photo, species, location, weight and condition. Import and export in CSV and JSON.':
+    'Journal de captures de poissons avec photo, espèce, lieu, poids et état. Import et export en CSV et JSON.',
 
-  // about
+  // about: tabs
   Education: 'Formation',
-  "Bachelor's degree in Electrical Engineering, followed by a Master's degree in Telecommunication Systems from Université Djilali Bounaama, Khemis Miliana.":
-    "Licence en génie électrique, puis Master en systèmes de télécommunications à l'Université Djilali Bounaama, Khemis Miliana.",
-  'Graduated with a thesis project (AcciSense) scoring 19.5/20, with the jury noting it as one of the strongest they had seen.':
-    "Diplômé avec un projet de fin d'études (AcciSense) noté 19,5/20, le jury le considérant comme l'un des plus solides qu'il ait vus.",
-  Career: 'Parcours',
-  'Started with an internship at SPRK (Société des Produits Rouges), then a second internship at Algérie Télécom\'s transmission department in Khemis Miliana.':
-    "J'ai débuté par un stage à la SPRK (Société des Produits Rouges), puis effectué un second stage au département transmission d'Algérie Télécom à Khemis Miliana.",
-  'Freelancing since 2019, as a developer, and also doing data annotation, transcription, and translation work.':
-    "Freelance depuis 2019 en tant que développeur, avec également des missions d'annotation de données, de transcription et de traduction.",
-  'Recently shifted focus toward backend engineering: FastAPI, PostgreSQL, Redis, and Celery, building production-style systems like SecureAuth API.':
-    "Récemment recentré sur l'ingénierie backend : FastAPI, PostgreSQL, Redis et Celery, pour construire des systèmes de type production comme SecureAuth API.",
-  Achievements: 'Réalisations',
-  '19.5/20 on Master\'s thesis (AcciSense), praised by the jury as one of the best projects presented.':
-    "19,5/20 pour mon mémoire de Master (AcciSense), salué par le jury comme l'un des meilleurs projets présentés.",
-  'Thesis reworked into an IEEE-format paper, published on ResearchGate.':
-    'Mémoire retravaillé en article au format IEEE, publié sur ResearchGate.',
-  '87.3% detection accuracy benchmarking three deep learning architectures (R3D-18, SlowFast R50, Video Swin Transformer).':
-    '87,3 % de précision de détection en comparant trois architectures de deep learning (R3D-18, SlowFast R50, Video Swin Transformer).',
-  Currently: 'Actuellement',
-  'Deep in a backend sprint, FastAPI, PostgreSQL, SQLAlchemy, Redis, and Celery, building out SecureAuth API and other backend systems.':
-    "En plein sprint backend : FastAPI, PostgreSQL, SQLAlchemy, Redis et Celery, pour développer SecureAuth API et d'autres systèmes backend.",
-  'Actively job hunting for backend/full-stack roles, with an eye on eventually working abroad.':
-    "À la recherche active d'un poste backend/full-stack, avec l'objectif de travailler à l'étranger à terme.",
+  Experience: 'Expérience',
+  Skills: 'Compétences',
+  'Personal info': 'Informations personnelles',
+
+  // about: education
+  "Master's": 'Master',
+  'Telecommunication Systems': 'Systèmes de télécommunications',
+  "Bachelor's": 'Licence',
+  'Electrical Engineering': 'Génie électrique',
+  Thesis: 'Mémoire',
+  'Accident detection and severity estimation using Deep Learning models':
+    "Détection d'accidents et estimation de leur gravité à l'aide de modèles de Deep Learning",
+  'Graded 19.75/20': 'Note : 19,75/20',
+
+  // about: experience
+  '2022 to now': "2022 à aujourd'hui",
+  'Freelance developer': 'Développeur freelance',
+  'Full-stack development': 'Développement full-stack',
+  'Dec 2025 - Mar 2026': 'Déc. 2025 - mars 2026',
+  'Algérie Télécom - Network Engineering Intern': 'Algérie Télécom - Stagiaire ingénieur réseaux',
+  'Transmission department, Khemis Miliana': 'Département transmission, Khemis Miliana',
+  'Dec 2022- Jan 2023': 'Déc. 2022 - janv. 2023',
+
+  // about: skills (the Frontend and Backend lists are tech names only, so they need no entry)
+  'Machine learning': 'Apprentissage automatique',
+  Telecom: 'Télécoms',
+  'PyTorch, computer vision, R3D-18, SlowFast R50, Video Swin Transformer, quantization and pruning.':
+    'PyTorch, vision par ordinateur, R3D-18, SlowFast R50, Video Swin Transformer, quantification et élagage.',
+  'MATLAB, Simulink, Cisco Packet Tracer, ATOLL, Python, Git, COFDM, LDPC channel coding, image, video and audio processing.':
+    "MATLAB, Simulink, Cisco Packet Tracer, ATOLL, Python, Git, COFDM, codage de canal LDPC, traitement d'images, de vidéos et de l'audio.",
+
+  // about: personal info
+  'Based in': 'Basé à',
+  'Khemis Miliana, Algeria': 'Khemis Miliana, Algérie',
+  'Open to': 'Ouvert à',
+  'Web development and networking roles': 'Postes en développement web et en réseaux',
+  Relocation: 'Mobilité',
+  'Yes, ready to move': 'Oui, prêt à déménager',
+  Interests: "Centres d'intérêt",
+  'Anything IT-related': "Tout ce qui touche à l'informatique",
 
   // services
   'Frontend Development': 'Développement Frontend',
@@ -65,7 +88,8 @@ const fr = {
   'Model Benchmarking': 'Benchmark de modèles',
 
   // contact
-  'Algeria, Algiers': 'Algérie, Alger',
+  'Scrolled this far? Say hi.': "Arrivé jusqu'ici ? Dites bonjour.",
+  'Back to top': 'Retour en haut',
 }
 
 function getInitialLang() {

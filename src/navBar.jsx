@@ -9,7 +9,7 @@ function NavBar() {
     <div className='navbar2'>
       <div className="menu2">
         <span><a href="#projects">{t('Work')}</a></span>
-        <span><a href="#services">{t('Services')}</a></span>
+        {/* <span><a href="#services">{t('CV')}</a></span> */}
         <span><a href="#About">{t('About')}</a></span>
         <span><a href="#contact">{t('Contact')}</a></span>
       </div>
