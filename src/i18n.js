@@ -30,8 +30,8 @@ const fr = {
   Platform: 'Plateforme',
   Github: 'Github',
   Article: 'Article',
-  'Online shop with cash on delivery across all 69 wilayas.':
-    'Boutique en ligne avec paiement à la livraison dans les 69 wilayas.',
+  'Online shop with cash on delivery':
+    'Boutique en ligne avec paiement à la livraison',
   'Fish catch log with photo, species, location, weight and condition. Import and export in CSV and JSON.':
     'Journal de captures de poissons avec photo, espèce, lieu, poids et état. Import et export en CSV et JSON.',
 

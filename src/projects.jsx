@@ -10,10 +10,10 @@ function ExternalIcon() {
 // Fill in `stack` for Harbor Log. The line is hidden when it is missing.
 const otherProjects = [
   {
-    name: 'Aness Shop',
+    name: 'MyShop',
     href: 'https://shop-pi-ten-72.vercel.app/',
     img: 'ecom.png',
-    desc: 'Online shop with cash on delivery across all 69 wilayas.',
+    desc: 'Online shop with cash on delivery',
     stack: 'Next.js, Supabase',
   },
   {
