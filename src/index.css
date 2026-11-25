@@ -38,3 +38,34 @@
   overflow-x: clip;
   scroll-behavior: smooth;
 }
+.landing.has-photo .landing-photo {
+  justify-self: end;
+  width: 100%;
+  max-width: 360px;
+  /* Keeps the full tall photo balanced next to the text */
+}
+
+.landing.has-photo .landing-photo img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: 75vh;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  /* border-radius: 24px; */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 900px) {
+  .landing.has-photo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .landing.has-photo .landing-photo {
+    order: -1;
+    justify-self: center;
+    max-width: 240px;
+  }
+}
