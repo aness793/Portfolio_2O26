@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 
 // Set this to your new portrait once you have it, e.g. '/aness.png' (file in /public).
 // While it is null the hero is text-only, so nothing breaks.
-const HERO_PHOTO = `${import.meta.env.BASE_URL}aness.jpg`
+const HERO_PHOTO = `/aness.jpg`
 
 function DownloadIcon() {
   return (
